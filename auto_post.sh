@@ -41,11 +41,11 @@ run_scripts() {
         return 1
     }
     
-    log "${YELLOW}Executando: node getsource.js${NC}"
-    if node getsource.js >> "$LOG_FILE" 2>&1; then
-        log "${GREEN}getsource.js executado com sucesso${NC}"
+    log "${YELLOW}Executando: node getsources.js${NC}"
+    if node getsources.js >> "$LOG_FILE" 2>&1; then
+        log "${GREEN}getsources.js executado com sucesso${NC}"
     else
-        log "${RED}Erro ao executar getsource.js${NC}"
+        log "${RED}Erro ao executar getsources.js${NC}"
         return 1
     fi
     
